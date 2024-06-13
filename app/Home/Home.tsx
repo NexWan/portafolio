@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './home.module.css'
 
-const home = () => {
+const Home = () => {
     let name:string = "John Doe";
   return (
     <div id='homeBody' className={`${styles.homeBody} ${' text-2xl rounded-b-xl px-5 h-screen'}`}>
@@ -10,4 +10,4 @@ const home = () => {
   )
 }
 
-export default home
+export default Home
