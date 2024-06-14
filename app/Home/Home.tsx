@@ -54,12 +54,12 @@ const Home = () => {
           <div className=' mx-auto max-w-screen-lg'>
             <h1 className=' text-3xl py-5 font-semibold'>About Me</h1>
             <p className=' text-lg text-center'>
-              I'm a 20 year old mexican student currently studying Software Engineering at the Tecnologico Nacional de Mexico.<br></br>
-              I'm passionate about technology and I'm always looking to learn something new!<br></br><br></br>
-              I'm currently learning about Fullstack development, specially the backend part of it. I'm also learning about networking and cybersecurity.<br></br>
-              I've participated at the Oracle Academy and I'm currently involved with a state wide project called "DinoBus".<br></br><br></br>
-              I'm also really passionate about music, I play the guitar and I'm always looking for new music to listen to.<br></br><br></br>
-              <b>Here you can see what I'm currently listening to ;D<br></br></b>
+              I&apos;m a 20 year old mexican student currently studying Software Engineering at the Tecnologico Nacional de Mexico.<br></br>
+              I&apos;m passionate about technology and I&apos;m always looking to learn something new!<br></br><br></br>
+              I&apos;m currently learning about Fullstack development, specially the backend part of it. I&apos;m also learning about networking and cybersecurity.<br></br>
+              I&apos;ve participated at the Oracle Academy and I&apos;m currently involved with a state wide project called &quot;DinoBus&quot;.<br></br><br></br>
+              I&apos;m also really passionate about music, I play the guitar and I&apos;m always looking for new music to listen to.<br></br><br></br>
+              <b>Here you can see what I&apos;m currently listening to ;D<br></br></b>
               <img className='mx-auto my-12' src="https://spotify-github-profile.vercel.app/api/view?uid=31yzahwadeqrj7t3znaogbz63vjm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false" />
             </p>
           </div>
