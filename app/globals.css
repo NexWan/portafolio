@@ -18,11 +18,15 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: #49243E;
+  background: #704264
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+*{
+  scroll-behavior: smooth;
 }

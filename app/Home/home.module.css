@@ -1,5 +1,5 @@
 .homeBody{
-    background-color: #704264;
+  background-color: #704264;
 }
 
 @keyframes fadeIn {
@@ -10,3 +10,7 @@
   .fadeIn {
     animation: fadeIn 2s ease-out;
   }
+
+.aboutBody{
+  background-color: #49243E;
+}
