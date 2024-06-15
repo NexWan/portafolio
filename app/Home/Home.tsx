@@ -12,7 +12,7 @@ const Home = () => {
   let name: string = "Leo";
 
   return (
-    <div id='homeBody' className={`${styles.homeBody} ${' text-2xl rounded-b-xl py-5 min-h-screen text-center justify-center content-center my-auto '}`}>
+    <div id='homeBody' className={`${styles.homeBody} ${styles.fadeIn} ${' text-2xl rounded-b-xl py-5 min-h-screen text-center justify-center content-center my-auto '}`}>
       <div className='p-5'>
         <ReactTyped
           onBegin={() => { typed?.stop(); }}
