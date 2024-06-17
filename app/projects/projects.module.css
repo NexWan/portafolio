@@ -1,3 +1,12 @@
 .themeColor{
     background-color: #500734
 }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 1s ease-out;
+  }

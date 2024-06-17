@@ -1,9 +1,9 @@
 import React from 'react'
 import TemplateCard from './TemplateCard'
-
+import styles from './projects.module.css'
 const Projects = () => {
   return (
-    <div className={`h-max pb-20`}>
+    <div className={`h-max pb-20 ${styles.fadeIn}`}>
         <div className="mx-auto max-w-screen-lg">
             <h1 className="text-3xl font-bold text-center mt-10">Projects</h1>
             <p className="text-center mt-5">Here you can see some of my personal projects!</p>
