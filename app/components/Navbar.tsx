@@ -46,7 +46,7 @@ const Navbar = () => {
       <ul
         className={`mx-12 space-x-10 ${
           isMenuOpen ? "hidden sm:hidden" : "flex sm:flex"
-        } hidden md:block`}
+        } hidden md:flex justify-center sm:justify-end sm:space-x-5 md:space-x-10 lg:space-x-20`}
       >
         {options.map((option, index) => {
           const isActive = active === index;
