@@ -67,7 +67,8 @@ const Navbar = () => {
       </ul>
       {/* Slide Menu for smaller screens */}
       {isMenuOpen && (
-        <ul className="fixed inset-0 z-50 bg-gray-800 bg-opacity-75 sm:hidden flex flex-col items-center justify-center space-y-6">
+        <div className="absolute top-0 left-0 w-screen h-screen bg-dark-nav text-white flex flex-col items-center justify-center space-y-5">
+          <ul className="fixed inset-0 z-50 bg-gray-800 bg-opacity-75 sm:hidden flex flex-col items-center justify-center space-y-6">
           {options.map((option, index) => (
             <li
               className="text-white text-xl"
@@ -81,6 +82,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+        </div>
       )}
     </>
   );

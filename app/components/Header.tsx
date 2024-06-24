@@ -20,7 +20,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className={` z-50 overscroll-contain w-screen mx-auto border-b-2 border-b-white sticky  top-0 transition-all ${isSticky ? 'bg-dark-nav scale-y-105' : 'bg-transparent'} overflow-x-hidden`}>
+    <div className={` z-30 overscroll-contain w-screen mx-auto border-b-2 border-b-white sticky  top-0 transition-all ${isSticky ? 'bg-dark-nav scale-y-105' : 'bg-transparent'} overflow-x-hidden`}>
       <div className={`max-w-screen-xl mx-auto items-center flex justify-between max-h-16 min-h-12 transition-all ${isSticky ? 'scale-105' : ''}`}>
         <div className='flex flex-row justify-between'>
           <Image src='https://github.com/nexwan.png' width={30} height={30} className='rounded-full ml-5' alt={'pfp'} />
