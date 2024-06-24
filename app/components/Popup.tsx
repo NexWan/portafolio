@@ -34,27 +34,28 @@ const Popup = ({
 
   const closePopup = () => {
     var popup1 = document.getElementById("popup");
-    
+
     toggleShow();
   };
 
   return ReactDOM.createPortal(
     <div
       className="fixed inset-0 bg-black bg-opacity-50 z-50 flex justify-center items-center"
-      id = "popup"
+      id="popup"
     >
       {/* Assuming closePopup is a function to close the popup */}
-      <div id='popup2'
+      <div
+        id="popup2"
         className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-10"
       ></div>
       <div
-        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-projects p-10 rounded-xl max-w-md lg:max-w-2xl"
+        className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 bg-projects p-10 rounded-xl max-w-sm md:max-w-lg lg:max-w-2xl"
         onClick={(e) => e.stopPropagation()}
       >
-         <button
-        className="absolute top-5 right-5 text-white"
-        onClick={closePopup} // Attach the onClick event handler here
-      >
+        <button
+          className="absolute top-5 right-5 text-white"
+          onClick={closePopup} // Attach the onClick event handler here
+        >
           X
         </button>
         <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
