@@ -29,21 +29,12 @@ const TemplateCard = ({
     setShow(!show);
   }
   return (
-    <div className={`rounded-xl p-4 ${styles.themeColor} hover:cursor-pointer flex justify-center flex-col hover:scale-105 transition-all duration-100`} onClick={showPoup}>
+    <div className={`rounded-xl p-4 ${styles.themeColor} active:scale-105 hover:cursor-pointer flex justify-center flex-col hover:scale-105 transition-all duration-100`} onClick={showPoup}>
       <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
       <p className="text-center mt-5">{desc}</p>
       <Image src={`${image}`} alt={title} className=" w-full mx-auto mt-5 h-max" width={500} height={0} />
       <p className="text-center mt-5">
-        Here you can see the{" "}
-        <a
-          href={url}
-          className="underline underline-offset-4 decoration-2 hover:scale-105"
-          target="_blank"
-          rel="noreferrer"
-        >
-          repo
-        </a>
-        {" "}of the project!
+        Click me to see more about the project!{" "}
         {pageUrl && (
           <>
             {" "}

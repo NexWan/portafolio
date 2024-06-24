@@ -50,7 +50,7 @@ const Projects = () => {
                 desc='This is a desktop app I made with C# and WPF, using Sql Server as the database manager and google cloud, it allows you to manage a database with a GUI following a MVVM pattern'
                 image='/assets/img/bd1.png'
                 url='https://github.com/NexWan/ProyectoAdminBD'
-                techs={[['C#', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"], ['WPF', 'https://i.imgur.com/4P6VJ9a.png'], ['SQL Server', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"], ['Google Cloud', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg"]]}
+                techs={[['C#', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"], ['WPF', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"], ['SQL Server', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg"], ['Google Cloud', "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original-wordmark.svg"]]}
                 images={['/assets/img/bd1.png', '/assets/img/bd2.png', '/assets/img/bd3.png', '/assets/img/bd4.png', '/assets/img/bd5.png']}
                 />
             </div>
