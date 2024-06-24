@@ -3,6 +3,7 @@
 import React from "react";
 import styles from "./projects.module.css";
 import Popup from "../components/Popup";
+import Image from "next/image";
 
 interface TemplateCardProps {
   title: string;
@@ -31,7 +32,7 @@ const TemplateCard = ({
     <div className={`rounded-xl p-4 ${styles.themeColor} hover:cursor-pointer flex justify-center flex-col hover:scale-105 transition-all duration-100`} onClick={showPoup}>
       <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
       <p className="text-center mt-5">{desc}</p>
-      <img src={image} alt={title} className=" w-max mx-auto mt-5" />
+      <Image src={`${image}`} alt={title} className=" w-full mx-auto mt-5 h-max" width={500} height={0} />
       <p className="text-center mt-5">
         Here you can see the{" "}
         <a
