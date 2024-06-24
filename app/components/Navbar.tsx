@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
-const Navbar = () => {
+const Navbar = ({setSticky,}:{setSticky:() => void;}) => {
   const options = ["Home", "Skills", "Projects", "Contact"];
   const [active, setActive] = useState(0);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to manage slide menu visibility
@@ -25,7 +25,11 @@ const Navbar = () => {
     console.log(index);
   };
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen); // Toggle slide menu visibility
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  }; // Toggle slide menu visibility
+
+  if(isMenuOpen) setSticky();
 
   return (
     <>
@@ -67,21 +71,23 @@ const Navbar = () => {
       </ul>
       {/* Slide Menu for smaller screens */}
       {isMenuOpen && (
-        <div className="absolute top-0 left-0 w-screen h-screen bg-dark-nav text-white flex flex-col items-center justify-center space-y-5">
-          <ul className="fixed inset-0 z-50 bg-gray-800 bg-opacity-75 sm:hidden flex flex-col items-center justify-center space-y-6">
-          {options.map((option, index) => (
-            <li
-              className="text-white text-xl"
-              onClick={() => {
-                handleClick(index);
-                toggleMenu();
-              }} // Close menu upon clicking an option
-              key={index}
-            >
-              <Link href={`/${option.toLowerCase()}`}>{option}</Link>
-            </li>
-          ))}
-        </ul>
+        <div className="absolute top-0 left-0 w-screen h-screen bg-dark-nav text-white flex flex-col items-center justify-center space-y-5 z-50">
+          <div className=" fixed inset-0 z-50 w-screen h-screen" >
+          <ul className="w-screen h-screen fixed inset-0 z-40 bg-gray-800 bg-opacity-75 sm:hidden flex flex-col items-center justify-center space-y-6">
+            {options.map((option, index) => (
+              <li
+                className="text-white text-xl z-30"
+                onClick={() => {
+                  handleClick(index);
+                  toggleMenu();
+                }}
+                key={index}
+              >
+                <Link href={`/${option.toLowerCase()}`}>{option}</Link>
+              </li>
+            ))}
+          </ul>
+          </div>
         </div>
       )}
     </>
@@ -89,3 +95,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
