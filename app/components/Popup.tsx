@@ -11,6 +11,7 @@ const Popup = ({
   techs,
   images,
   repo,
+  toggleShow,
 }: {
   show: boolean;
   title: string;
@@ -18,6 +19,7 @@ const Popup = ({
   techs: string[][];
   images: string[];
   repo: string;
+  toggleShow: () => void;
 }) => {
   if (!show) return null;
 
@@ -32,13 +34,8 @@ const Popup = ({
 
   const closePopup = () => {
     var popup1 = document.getElementById("popup");
-    var popup2 = document.getElementById("popup2");
-    if (popup1) {
-      popup1.remove(); // This removes the first popup from the DOM
-    }
-    if (popup2) {
-      popup2.remove(); // This removes the second popup from the DOM
-    }
+    
+    toggleShow();
   };
 
   return ReactDOM.createPortal(

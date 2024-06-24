@@ -52,7 +52,7 @@ const TemplateCard = ({
           </>
         )}
       </p>
-      <Popup show={show} title={title} desc={desc} techs={techs} images={images} repo={url}/>
+      <Popup show={show} title={title} desc={desc} techs={techs} images={images} repo={url} toggleShow={showPoup}/>
     </div>
   );
 };
