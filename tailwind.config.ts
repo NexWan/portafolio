@@ -15,6 +15,7 @@ const config: Config = {
       },
       colors: {
         'dark-nav': '#49243E;',
+        'projects': '#500734',
       },
     },
   },

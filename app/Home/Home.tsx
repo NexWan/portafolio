@@ -59,9 +59,10 @@ const Home = () => {
               I&apos;m currently learning about Fullstack development, specially the backend part of it. I&apos;m also learning about networking and cybersecurity.<br></br>
               I&apos;ve participated at the Oracle Academy and I&apos;m currently involved with a state wide project called &quot;DinoBus&quot;.<br></br><br></br>
               I&apos;m also really passionate about music, I play the guitar and I&apos;m always looking for new music to listen to.<br></br><br></br>
-              <b>Here you can see what I&apos;m currently listening to ;D<br></br></b>
-              <img className='mx-auto my-12' src="https://spotify-github-profile.vercel.app/api/view?uid=31yzahwadeqrj7t3znaogbz63vjm&cover_image=true&theme=default&show_offline=false&background_color=121212&interchange=false" />
+              <b>Here&apos;s a random picture of a cat<br></br></b>
+              <img className='mx-auto my-12 w-fit' src="https://cataas.com/cat" />
             </p>
+            <p className=' text-sm'>This cat comes from {<a href='https://cataas.com/' className='cursor-pointer text-blue-400 hover:scale-105'>cat as a service</a>}</p>
           </div>
         </div>
       )}
