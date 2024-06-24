@@ -3,10 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import Socials from "./Socials";
+import styles from "./contact.module.css";
 
 const Contact = () => {
   return (
-    <div className={`h-max pb-20`}>
+    <div className={`h-max pb-20 ${styles.fadeIn}`}>
       <div className="mx-auto max-w-screen-lg rounded-xl">
         <h1 className="text-3xl font-bold text-center mt-10">Contact</h1>
         <p className="text-center mt-5">You can contact me in any of these media!</p>
