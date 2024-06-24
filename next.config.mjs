@@ -35,9 +35,7 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'api.pikwy.com',
             },
-        ],
-        quality: 100,
-       
+        ]
     }
 };
 
