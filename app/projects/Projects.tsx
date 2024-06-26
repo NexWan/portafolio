@@ -49,6 +49,14 @@ const Projects = () => {
                 techs={[['C#', 'https://go-skill-icons.vercel.app/api/icons?i=cs,dotnet,gcp,sqlserver&theme=dark']]}
                 images={['/assets/img/bd1.png', '/assets/img/bd2.png', '/assets/img/bd3.png', '/assets/img/bd4.png', '/assets/img/bd5.png']}
                 />
+                <TemplateCard
+                title='iot container manager'
+                desc='This is a desktop app me and my team made using Rust and ESP32, it allows you to manage a container with a GUI made with ElectronJS and Angular, it uses a database made with Postgres and Elysia for the backend server'
+                image='/assets/img/container.png'
+                url='https://github.com/NexWan/Proyecto-final-programables'
+                techs={[['Rust', 'https://go-skill-icons.vercel.app/api/icons?i=rust,angular,electron,elysia,postgres&theme=dark']]}
+                images={['/assets/img/container.png', '/assets/img/container2.png', '/assets/img/container3.png', '/assets/img/container4.png', '/assets/img/container5.png']}
+                />
             </div>
         </div>
     </div>
