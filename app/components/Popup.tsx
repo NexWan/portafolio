@@ -64,7 +64,6 @@ const Popup = ({
         <p className="text-center mt-5 text-white">{desc}</p>
         <Slider {...settings} className=" max-w-xl mx-auto">
           {images.map((image, index) => (
-            <div key={index} className="flex justify-center items-center mx-auto"> 
               <Image
                 src={`${image}`}
                 alt={title}
@@ -74,7 +73,6 @@ const Popup = ({
                 height={0}
                 quality={100}
               />
-            </div>
           ))}
         </Slider>
         <p className="text-center mt-5 text-white font-semibold">Technologies used:</p>
