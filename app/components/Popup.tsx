@@ -30,6 +30,8 @@ const Popup = ({
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    adaptiveHeight: true,
+    autoplaySpeed: 2000,
   };
 
   const closePopup = () => {
@@ -62,32 +64,31 @@ const Popup = ({
         <p className="text-center mt-5 text-white">{desc}</p>
         <Slider {...settings} className=" max-w-xl mx-auto">
           {images.map((image, index) => (
-            <Image
-              src={`${image}`}
-              alt={title}
-              key={index}
-              className="mx-auto mt-5 w-max h-max "
-              width={500}
-              height={0}
-              quality={100}
-            />
+            <div key={index} className="flex justify-center items-center mx-auto"> 
+              <Image
+                src={`${image}`}
+                alt={title}
+                key={index}
+                className="mx-auto mt-5 w-max h-max "
+                width={500}
+                height={0}
+                quality={100}
+              />
+            </div>
           ))}
         </Slider>
-        <p className="text-center mt-5 text-white">Technologies used:</p>
+        <p className="text-center mt-5 text-white font-semibold">Technologies used:</p>
         <div className="flex flex-wrap justify-center max-w-xl mx-auto">
           {techs.map((tech, index) => (
             <div
               className="flex justify-center items-center flex-col mx-auto font-bold mt-5"
               key={index}
             >
-              <Image
+              <img
                 src={`${tech[1]}`}
                 alt={tech[0]}
-                className="w-10 h-10 my-auto"
-                width={50}
-                height={50}
+                className="my-auto"
               />
-              <p>{tech[0]}</p>
             </div>
           ))}
         </div>
@@ -97,12 +98,10 @@ const Popup = ({
             open(repo);
           }}
         >
-          <Image
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original-wordmark.svg"
+          <img
+            src="https://go-skill-icons.vercel.app/api/icons?i=github&theme=dark"
             alt="github"
-            className="w-10 h-10 mr-2 my-auto"
-            width={50}
-            height={50}
+            className="w-10 h-10 my-auto"
           />
           <p
             className="underline underline-offset-4 decoration-2"

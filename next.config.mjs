@@ -35,6 +35,10 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'api.pikwy.com',
             },
+            {
+                protocol: 'https',
+                hostname: 'go-skill-icons.vercel.app',
+            }
         ]
     }
 };
