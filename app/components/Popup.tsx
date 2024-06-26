@@ -26,12 +26,12 @@ const Popup = ({
   var settings = {
     dots: true,
     infinite: true,
-    speed: 150,
+    speed: 200,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     adaptiveHeight: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
   };
 
   const closePopup = () => {
