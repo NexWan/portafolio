@@ -71,7 +71,7 @@ const Navbar = ({setSticky,}:{setSticky:() => void;}) => {
       </ul>
       {/* Slide Menu for smaller screens */}
       {isMenuOpen && (
-        <div className="fixed top-0 left-0 w-screen h-screen bg-dark-nav text-white flex flex-col items-center justify-center space-y-5 z-50">
+        <div className="fixed top-0 left-0 w-screen h-screen text-white flex flex-col items-center justify-center space-y-5 z-50">
           <div className=" fixed inset-0 z-50 w-screen h-screen" >
           <ul className="w-screen h-screen fixed inset-0 z-40 bg-gray-800 bg-opacity-75 sm:hidden flex flex-col items-center justify-center space-y-6">
             {options.map((option, index) => (
