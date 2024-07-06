@@ -8,6 +8,15 @@ const Projects = () => {
             <h1 className="text-3xl font-bold text-center mt-10">Projects</h1>
             <p className="text-center mt-5">Here you can see some of my personal projects!</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10"> 
+                <TemplateCard
+                title='SpotiPlaying'
+                desc='SpotiPlaying is an embeded SVG that shows the song you are listening to on Spotify, it uses the Spotify API to get the song data and the SVG is made with vanilla HTML and CSS so you can embed it on your website or github profile'
+                image='https://spoti-playing.vercel.app/api/svg?userId=31yzahwadeqrj7t3znaogbz63vjm'
+                url='https://github.com/NexWan/SpotiPlaying'
+                techs={[['HTML', 'https://go-skill-icons.vercel.app/api/icons?i=html,css,react,typescript,tailwindcss,postgresql,nextjs,vercel&theme=dark']]}
+                images={['/assets/img/spoti1.png', '/assets/img/spoti2.png', '/assets/img/spoti3.png']}
+                isSvg={true}
+                />
                 <TemplateCard 
                 title='Euroscrapper' 
                 desc='Euroscrapper is a web scrapper made with python which scraps data from the website Eurogamer in a JSON format' 

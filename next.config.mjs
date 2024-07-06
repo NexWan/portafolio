@@ -38,6 +38,10 @@ const nextConfig = {
             {
                 protocol: 'https',
                 hostname: 'go-skill-icons.vercel.app',
+            },
+            {
+                protocol: 'https',
+                hostname: 'spoti-playing.vercel.app',
             }
         ]
     }

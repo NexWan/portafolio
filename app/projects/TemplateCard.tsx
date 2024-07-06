@@ -13,6 +13,7 @@ interface TemplateCardProps {
   pageUrl?: string;
   techs: string[][];
   images: string[];
+  isSvg?: boolean;
 }
 
 const TemplateCard = ({
@@ -23,6 +24,7 @@ const TemplateCard = ({
   pageUrl,
   techs,
   images,
+  isSvg,
 }: TemplateCardProps) => {
   const [show, setShow] = React.useState(false);
   const showPoup = () => {
@@ -32,7 +34,14 @@ const TemplateCard = ({
     <div className={`rounded-xl p-4 ${styles.themeColor} active:scale-105 hover:cursor-pointer flex justify-center flex-col hover:scale-105 transition-all duration-100`} onClick={showPoup}>
       <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
       <p className="text-center mt-5">{desc}</p>
-      <Image src={`${image}`} alt={title} className=" w-full mx-auto mt-5 h-max" width={500} height={0} />
+      {isSvg && (
+        <div className="mx-auto mt-5 flex justify-center items-center overflow-hidden w-52">
+          <img src={image} alt={title} className="scale-75" />
+        </div>
+      )}
+      {!isSvg && (
+        <Image src={`${image}`} alt={title} className=" w-full mx-auto mt-5 h-max" width={500} height={0} />
+      )}
       <p className="text-center mt-5">
         Click me to see more about the project!{" "}
         {pageUrl && (
