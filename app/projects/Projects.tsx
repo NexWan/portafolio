@@ -11,7 +11,7 @@ const Projects = () => {
                 <TemplateCard
                 title='SpotiPlaying'
                 desc='SpotiPlaying is an embeded SVG that shows the song you are listening to on Spotify, it uses the Spotify API to get the song data and the SVG is made with vanilla HTML and CSS so you can embed it on your website or github profile'
-                image='https://spoti-playing.vercel.app/api/svg?userId=31yzahwadeqrj7t3znaogbz63vjm'
+                image='https://spoti-playing.vercel.app/api/svg?userId=31yzahwadeqrj7t3znaogbz63vjm&compact=true'
                 url='https://github.com/NexWan/SpotiPlaying'
                 techs={[['HTML', 'https://go-skill-icons.vercel.app/api/icons?i=html,css,react,typescript,tailwindcss,postgresql,nextjs,vercel&theme=dark']]}
                 images={['/assets/img/spoti1.png', '/assets/img/spoti2.png', '/assets/img/spoti3.png']}

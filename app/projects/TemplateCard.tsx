@@ -35,8 +35,8 @@ const TemplateCard = ({
       <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
       <p className="text-center mt-5">{desc}</p>
       {isSvg && (
-        <div className="mx-auto mt-5 flex justify-center items-center overflow-hidden w-52">
-          <img src={image} alt={title} className="scale-75" />
+        <div className="mx-auto mt-5 flex justify-center items-center overflow-hidden">
+          <img src={image} alt={title} className="" />
         </div>
       )}
       {!isSvg && (

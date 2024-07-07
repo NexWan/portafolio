@@ -62,13 +62,13 @@ const Popup = ({
         </button>
         <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
         <p className="text-center mt-5 text-white">{desc}</p>
-        <Slider {...settings} className=" max-w-xl mx-auto">
+        <Slider {...settings} className=" max-w-xl mx-auto max-h-96">
           {images.map((image, index) => (
               <Image
                 src={`${image}`}
                 alt={title}
                 key={index}
-                className="mx-auto mt-5 w-max max-h-96 "
+                className="mx-auto mt-5 object-scale-down max-h-96 w-auto"
                 width={500}
                 height={0}
                 quality={100}
