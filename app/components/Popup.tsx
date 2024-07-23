@@ -60,7 +60,7 @@ const Popup = ({
         >
           X
         </button>
-        <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
+        <h1 className="text-2xl font-bold text-center mt-5 text-white">{title}</h1>
         <p className="text-center mt-5 text-white">{desc}</p>
         <Slider {...settings} className=" max-w-xl mx-auto max-h-96">
           {images.map((image, index) => (
@@ -102,7 +102,7 @@ const Popup = ({
             className="w-10 h-10 my-auto"
           />
           <p
-            className="underline underline-offset-4 decoration-2"
+            className="underline underline-offset-4 decoration-2 text-white"
             rel="noreferrer"
           >
             See the repo

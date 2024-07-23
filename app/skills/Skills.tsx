@@ -56,7 +56,7 @@ const Skills = () => {
     ];
 
     return (
-        <div className={`${styles.fadeIn} ${styles.skillsBody} h-max pb-20`}>
+        <div className={`${styles.fadeIn} ${styles.skillsBody} h-max pb-20 text-white`}>
             <div className="mx-auto max-w-screen-lg">
                 <h1 className="text-3xl py-5 font-semibold text-center">Skills</h1>
                 <p className=" text-lg text-center">
