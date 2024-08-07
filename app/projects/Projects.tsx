@@ -26,6 +26,14 @@ const Projects = () => {
                 images={['/assets/img/scrapper1.png', '/assets/img/scrapper2.png', '/assets/img/scrapper3.png']}
                 />
                 <TemplateCard
+                title='MindScrap'
+                desc='MindScrap is a web scrapper and schedule generator made with python, it scraps data from Mindbox and generates a schedule for you.'
+                image='https://raw.githubusercontent.com/NexWan/MindScrap/main/example/terminal.gif'
+                url='https://github.com/NexWan/MindScrap'
+                techs={[['Python', 'https://go-skill-icons.vercel.app/api/icons?i=python&theme=dark']]}
+                images={['/assets/img/mind1.png', '/assets/img/mind2.png', '/assets/img/mind3.png', '/assets/img/mind4.png', '/assets/img/mind5.png', '/assets/img/mind6.png']}
+                />
+                <TemplateCard
                 title='Chase a Rooster'
                 desc='Chase a Rooster is a 3d game that I made with unity and C# for a school project where you need to catch a rooster in a different levels, it uses AI for the rooster to run away from you'
                 image='https://i.imgur.com/uqQ5eSX.png'
@@ -43,11 +51,10 @@ const Projects = () => {
                 />
                 <TemplateCard
                 title='Engineering school chapter webpage'
-                desc="This is a webpage that I'm making with Angular for my engineering school chapter, it's still in development"
-                image='https://api.pikwy.com/web/6670465abe0c823d2832b926.jpg'
-                url='https://github.com/CapituloSistemasITS/CapituloSistemasITS.github.io'
-                pageUrl='https://cscits.vercel.app/home'
-                techs={[['Angular', "https://go-skill-icons.vercel.app/api/icons?i=angular,ts,html,css,tailwind&theme=dark"]]}
+                desc="This is a webpage that I'm making with ReactJS and TailwindCSS for my school chapter, it's a webpage where you can see the events and activities that we do in the chapter"
+                image='/assets/img/capitulo0.png'
+                url='https://github.com/CapituloSistemasITS/capitulo-sistemas-its/tree/main'
+                techs={[['Angular', "https://go-skill-icons.vercel.app/api/icons?i=react,ts,html,css,tailwind&theme=dark"]]}
                 images={['/assets/img/cap1.png', '/assets/img/cap2.png', '/assets/img/cap3.png']}
                 />
                 <TemplateCard
