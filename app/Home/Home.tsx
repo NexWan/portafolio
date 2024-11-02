@@ -59,7 +59,7 @@ const Home = () => {
               I&apos;m currently learning about Fullstack development, specially the backend part of it. I&apos;m also learning about networking and cybersecurity.<br></br>
               I&apos;ve participated at the Oracle Academy and I&apos;m currently involved with a state wide project called &quot;DinoBus&quot;.
               I&apos;m also really passionate about music, I play the guitar and I&apos;m always looking for new music to listen to.<br></br>
-              I also won a hackaton organized by my university at regional level with a project called 'Manos que ven' which is a project that teaches sign language through a react native app.<br></br>
+              I also won a hackaton organized by my university at regional level with a project called &apos;Manos que ven&apos; which is a project that teaches sign language through a react native app.<br></br>
               Oh and I&apos;m currently working at ZF as a software developer intern.
             </p>
             <b className='text-lg md:text-xl'>Here you can see what I&apos;m listening to<br></br></b>
