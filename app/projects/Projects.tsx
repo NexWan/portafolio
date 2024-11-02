@@ -5,8 +5,8 @@ const Projects = () => {
   return (
     <div className={`h-max pb-20 ${styles.fadeIn} text-white`}>
         <div className="mx-auto max-w-screen-lg">
-            <h1 className="text-3xl font-bold text-center mt-10">Projects</h1>
-            <p className="text-center mt-5">Here you can see some of my personal projects!</p>
+            <h1 className="md:text-3xl text-xl font-bold text-center mt-10">Projects</h1>
+            <p className="text-center mt-5 text-base md:text-lg">Here you can see some of my personal projects!</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10"> 
                 <TemplateCard
                 title='SpotiPlaying'

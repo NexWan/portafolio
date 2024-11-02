@@ -32,17 +32,17 @@ const TemplateCard = ({
   }
   return (
     <div className={`rounded-xl p-4 ${styles.themeColor} active:scale-105 hover:cursor-pointer flex justify-center flex-col hover:scale-105 transition-all duration-100`} onClick={showPoup}>
-      <h1 className="text-2xl font-bold text-center mt-5">{title}</h1>
-      <p className="text-center mt-5">{desc}</p>
+      <h1 className="md:text-2xl text-lg font-bold text-center mt-5">{title}</h1>
+      <p className="text-center mt-5 md:text-base text-sm">{desc}</p>
       {isSvg && (
         <div className="mx-auto mt-5 flex justify-center items-center overflow-hidden">
           <img src={image} alt={title} className="" />
         </div>
       )}
       {!isSvg && (
-        <Image src={`${image}`} alt={title} className=" w-full mx-auto mt-5 h-max" width={500} height={0} />
+        <Image src={`${image}`} alt={title} className=" w-full mx-auto mt-5 " width={500} height={0} />
       )}
-      <p className="text-center mt-5">
+      <p className="text-center mt-5 md:text-base text-sm">
         Click me to see more about the project!{" "}
         {pageUrl && (
           <>

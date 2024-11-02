@@ -60,19 +60,16 @@ const Popup = ({
         >
           X
         </button>
-        <h1 className="text-2xl font-bold text-center mt-5 text-white">{title}</h1>
-        <p className="text-center mt-5 text-white">{desc}</p>
+        <h1 className="md:text-2xl text-xl font-bold text-center mt-5 text-white">{title}</h1>
+        <p className="text-center mt-5 text-white md:text-base text-sm">{desc}</p>
         <Slider {...settings} className=" max-w-xl mx-auto max-h-96">
           {images.map((image, index) => (
-              <Image
-                src={`${image}`}
-                alt={title}
-                key={index}
-                className="mx-auto mt-5 object-scale-down max-h-96 w-auto"
-                width={500}
-                height={0}
-                quality={100}
-              />
+              <img
+              src={`${image}`}
+              alt={title}
+              key={index}
+              className="mx-auto mt-5 md:max-h-96 max-h-52 object-scale-down w-auto"
+            />
           ))}
         </Slider>
         <p className="text-center mt-5 text-white font-semibold">Technologies used:</p>
@@ -102,7 +99,7 @@ const Popup = ({
             className="w-10 h-10 my-auto"
           />
           <p
-            className="underline underline-offset-4 decoration-2 text-white"
+            className="underline underline-offset-4 decoration-2 text-white md:text-base text-sm"
             rel="noreferrer"
           >
             See the repo
