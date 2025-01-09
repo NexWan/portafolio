@@ -9,6 +9,13 @@ const Home = () => {
   const [typed, setTyped] = useState<Typed | undefined>();
   const [firstAnimationComplete, setFirstAnimationComplete] = useState(false); // State to track completion of the first animation
   const [clicked, setClicked] = useState(false); // State to track if the user clicked the button
+  const birthDate = new Date(2003, 7, 13); // Note: Months are 0-indexed, so 7 is August
+  var age = new Date().getFullYear() - birthDate.getFullYear();
+  const monthDifference = new Date().getMonth() - birthDate.getMonth();
+  const dayDifference = new Date().getDate() - birthDate.getDate();
+  if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+    age--;
+  }
   let name: string = "Leo";
 
   return (
@@ -54,13 +61,13 @@ const Home = () => {
           <div className=' mx-auto max-w-screen-md'>
             <h1 className=' md:text-3xl py-5 font-semibold'>About Me</h1>
             <p className={`md:text-lg text-justify mb-5 text-base ${styles.customParagraph} `}>
-              I&apos;m a 20 year old mexican student currently studying Software Engineering at the Tecnologico Nacional de Mexico.
+              I&apos;m a {age} year old mexican student currently studying Software Engineering at the Tecnologico Nacional de Mexico.
               I&apos;m passionate about technology and I&apos;m always looking to learn something new!
               I&apos;m currently learning about Fullstack development, specially the backend part of it. I&apos;m also learning about networking and cybersecurity.<br></br>
               I&apos;ve participated at the Oracle Academy and I&apos;m currently involved with a state wide project called &quot;DinoBus&quot;.
               I&apos;m also really passionate about music, I play the guitar and I&apos;m always looking for new music to listen to.<br></br>
               I also won a hackaton organized by my university at regional level with a project called &apos;Manos que ven&apos; which is a project that teaches sign language through a react native app.<br></br>
-              Oh and I&apos;m currently working at ZF as a software developer intern.
+              Oh and I&apos;m currently working at Softtek as a software developer intern.
             </p>
             <b className='text-lg md:text-xl'>Here you can see what I&apos;m listening to<br></br></b>
             <img className='mx-auto my-6 w-fit' src="https://spoti-playing.vercel.app/api/svg?userId=31yzahwadeqrj7t3znaogbz63vjm&compact=true" alt="spotify" />
