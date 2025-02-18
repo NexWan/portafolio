@@ -9,6 +9,13 @@ const Home = () => {
   const [typed, setTyped] = useState<Typed | undefined>();
   const [firstAnimationComplete, setFirstAnimationComplete] = useState(false); // State to track completion of the first animation
   const [clicked, setClicked] = useState(false); // State to track if the user clicked the button
+  const birthDate = new Date(2003, 7, 13); // Note: Months are 0-indexed, so 7 is August
+  var age = new Date().getFullYear() - birthDate.getFullYear();
+  const monthDifference = new Date().getMonth() - birthDate.getMonth();
+  const dayDifference = new Date().getDate() - birthDate.getDate();
+  if (monthDifference < 0 || (monthDifference === 0 && dayDifference < 0)) {
+    age--;
+  }
   let name: string = "Leo";
   return (
     <div id='homeBody' className={`${styles.homeBody} ${styles.fadeIn} text-white z-10 text-2xl rounded-b-xl pt-5 min-h-screen text-center justify-center content-center my-auto`}>
