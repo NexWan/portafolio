@@ -1,4 +1,6 @@
 .homeBody{
+  display:grid;
+  min-height: 100dvh;
   background-color: #704264;
 }
 
